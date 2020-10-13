@@ -1,0 +1,34 @@
+stages:
+  - Build
+  - Test
+  - Deploy
+
+build:
+  stage: Build
+  tags:
+    - shell
+  script:
+    - echo "static analysis"
+    - mvn install
+    - mvn clean compile
+    - exit 0
+  allow_failure: true
+
+unittest:
+  stage: Test
+  tags:
+    - shell
+  script:
+    - echo "test"
+    - mvn test
+    - exit 0
+  allow_failure: true
+
+deploy:
+  stage: Deploy
+  tags:
+    - shell
+  script:
+    - echo "deploy"
+    - exit 0
+  allow_failure: true
