@@ -24,6 +24,8 @@ README
 
 e.g "java -jar SimulationGeneratorExecutable.jar src/main/resources/RocketDesign.ork src/main/resources/dummyData.csv output.csv 10 -v1 2"
 
+### FOR TESTING: If you would like to test our program, you can use find the above files in G16RocketMonteCarlo/src/main/resources/
+
 5. The command line will then output a lot of logging data and finally finish with "successfully written CSV data"
 
 
@@ -31,7 +33,7 @@ e.g "java -jar SimulationGeneratorExecutable.jar src/main/resources/RocketDesign
 
 ### Data Read In
 
-- Launch Rod Angle: Radians (°)
+- Launch Rod Angle: Radians (°)/
 	Maximum Angle: 1/3 PI (60°)
 	Minimum Angle: -1/3 PI (-60°)
 - Launch Rod Length: Centimetres (cm)
